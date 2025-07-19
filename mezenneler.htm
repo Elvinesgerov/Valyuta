@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Məzənnələr</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="məzənnələr.css">
+  <script src="https://unpkg.com/i18next@22.4.9/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.4/i18nextBrowserLanguageDetector.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png" />
+</head>
+
+<body>
+  <header>
+    <img src="https://www.valyuta.com/statics/photos/valyuta-logo.png" alt="">
+    <ul>
+      <li>
+        <a href="konvertor.htm" data-i18n="Konvertor">Konvertor</a>
+      </li>
+      <li>
+        <a href="mezenneler.htm" data-i18n="Məzənnələr" style="color: #10ABA2;">Məzənnələr</a>
+      </li>
+      <li>
+        <a href="qrafikler.htm" data-i18n="Qrafikler">Qrafiklər</a>
+      </li>
+      <li>
+        <select name="lang">
+          <option value="az">Az</option>
+          <option value="en">Eng</option>
+        </select>
+      </li>
+      <li>
+        <div class="darkmood">
+          <i class="ri-sun-line"></i>
+          <i class="ri-moon-line"></i>
+        </div>
+      </li>
+    </ul>
+    <div class="date">
+      <p></p>
+      <i class="ri-calendar-2-line"></i>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h4 data-i18n="containerH4">Bank valyuta kursları<h4>
+          <p data-i18n="containerP">Bu bölmə vasitəsilə ölkədaxili bankların valyutaları hansı kurs ilə alıb və ya
+            satması
+            haqqında məlumatlarla tanış ola bilərsiniz.
+          </p>
+    </div>
+    <div class="box">
+      <h2 data-i18n="boxH2">Banklarda bu gün üçün ən sərfəli valyuta məzənnələri</h2>
+    </div>
+
+    <div class="valyutaPrize">
+      <table>
+        <tr>
+          <th data-i18n="Valyuta">Valyuta</th>
+          <th data-i18n="nagdAlis">Ən sərfəli nağd alış</th>
+          <th data-i18n="nagdsizAlis">Ən sərfəli nağdsız alış</th>
+          <th data-i18n="nagdSatis">Ən sərfəli nağd satış</th>
+          <th data-i18n="nagdsizSatis">Ən sərfəli nağdsız satış</th>
+        </tr>
+        <tr>
+          <td>
+            <img src="./image/amerika.png" alt="">
+            <p>1 USD</p>
+          </td>
+          <td> 1.6970</td>
+          <td>1.6975</td>
+          <td>1.7020</td>
+          <td>1.7025</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./image/euro.webp" alt="">
+            <p>1 EUR</p>
+          </td>
+          <td>1.9430</td>
+          <td> 1.9500</td>
+          <td>2.0070</td>
+          <td>2.0010</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./image/russia.webp" alt="">
+            <p>1 RUB</p>
+          </td>
+          <td>0.0193</td>
+          <td>0.0194</td>
+          <td>0.0244</td>
+          <td>0.0245</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./image/turkiye.png" alt="">
+            <p>TRY</p>
+          </td>
+          <td>0.0337</td>
+          <td> 0.0392</td>
+          <td>0.0497</td>
+          <td>0.0480</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <script src="mezenneler.js"></script>
+</body>
+
+</html>

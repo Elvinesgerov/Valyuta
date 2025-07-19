@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Qrafik</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="qrafik.css">
+ <script src="https://unpkg.com/i18next@22.4.9/dist/umd/i18next.min.js"></script>
+ <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.4/i18nextBrowserLanguageDetector.min.js"></script>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
+ <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png" />
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+ <header>
+  <img src="https://www.valyuta.com/statics/photos/valyuta-logo.png" alt="">
+  <ul>
+   <li>
+    <a href="konvertor.htm" data-i18n="Konvertor">Konvertor</a>
+   </li>
+   <li>
+    <a href="mezenneler.htm" data-i18n="Məzənnələr">Məzənnələr</a>
+   </li>
+   <li>
+    <a href="qrafikler.htm" data-i18n="Qrafikler" style="color: #10ABA2;">Qrafiklər</a>
+   </li>
+   <li>
+    <select name="lang">
+     <option value="az">Az</option>
+     <option value="en">Eng</option>
+    </select>
+   </li>
+   <li>
+    <div class="darkmood">
+     <i class="ri-sun-line"></i>
+     <i class="ri-moon-line"></i>
+    </div>
+   </li>
+  </ul>
+  <div class="date">
+   <p></p>
+   <i class="ri-calendar-2-line"></i>
+  </div>
+ </header>
+
+ <main>
+  <div class="container">
+   <h4 data-i18n="containerH4">VALYUTA QRAFİKLƏRİNİ CANLI İZLƏYİN VƏ DİGƏR VALYUTA CÜTLÜKLƏRİ İLƏ MÜQAYİSƏ EDİN<h4>
+     <p data-i18n="containerP">Bu bölmə vasitəsilə valyuta cütlüklərinin ani qiymət dəyişikliklərini dəqiqəlik, saatlıq,
+      günlük və həftəlik qiymət tendensiyasını görə bilə, digər valyuta cütlükləri ilə müqayisə edə bilərsiniz
+     </p>
+  </div>
+  <div class="box">
+   <h2 data-i18n="boxH2">Məzənələrin son 15 ildə dəyişməsi</h2>
+   <canvas id="multiCurrencyChart" width="1000" height="500"></canvas>
+  </div>
+ </main>
+ <script src="qrafik.js"></script>
+</body>
+
+</html>

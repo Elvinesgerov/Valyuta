@@ -1,0 +1,45 @@
+@media (min-width: 350px) and (max-width: 600px) {
+ canvas#multiCurrencyChart {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 5px;
+ }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+ canvas#multiCurrencyChart {
+  width: 90% !important;
+  height: auto !important;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px;
+ }
+
+ .container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 50% !important;
+ }
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+ .container {
+  width: 70%;
+  margin: 30px auto;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  height: 50% !important;
+ }
+
+ canvas#multiCurrencyChart {
+  width: 80% !important;
+  height: auto !important;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 15px;
+ }
+}

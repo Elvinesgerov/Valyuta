@@ -1,0 +1,121 @@
+table {
+ border-collapse: collapse;
+ width: 80%;
+ font-size: 18px;
+ margin-left: 6%;
+ margin-top: 3%;
+}
+
+td,
+th {
+ border: 1px solid black;
+}
+
+th {
+ background-color: gray;
+ color: white;
+ padding: 20px;
+}
+
+td {
+ background-color: white;
+ color: black;
+ font-size: 22px;
+}
+
+td img {
+ width: 50px;
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+ .valyutaPrize table {
+  width: 100%;
+  font-size: 14px;
+  margin-left: 0;
+  margin-top: 10px;
+ }
+
+ .valyutaPrize td,
+ .valyutaPrize th {
+  padding: 8px 5px;
+  font-size: 14px;
+  text-align: center;
+ }
+
+ .valyutaPrize th {
+  padding: 10px 5px;
+ }
+
+ .valyutaPrize td img {
+  width: 30px;
+  display: block;
+  margin: 0 auto 5px auto;
+ }
+
+ .valyutaPrize td p {
+  margin: 0;
+  font-size: 12px;
+ }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+ .valyutaPrize table {
+  width: 90%;
+  font-size: 16px;
+  margin-left: 5%;
+  margin-top: 15px;
+ }
+
+ .valyutaPrize td,
+ .valyutaPrize th {
+  padding: 12px 8px;
+  font-size: 16px;
+  text-align: center;
+ }
+
+ .valyutaPrize th {
+  padding: 15px 8px;
+ }
+
+ .valyutaPrize td img {
+  width: 40px;
+  display: block;
+  margin: 0 auto 7px auto;
+ }
+
+ .valyutaPrize td p {
+  margin: 0;
+  font-size: 14px;
+ }
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+ .valyutaPrize table {
+  width: 80%;
+  font-size: 18px;
+  margin-left: 6%;
+  margin-top: 20px;
+ }
+
+ .valyutaPrize td,
+ .valyutaPrize th {
+  padding: 18px 12px;
+  font-size: 18px;
+  text-align: center;
+ }
+
+ .valyutaPrize th {
+  padding: 22px 12px;
+ }
+
+ .valyutaPrize td img {
+  width: 50px;
+  display: block;
+  margin: 0 auto 8px auto;
+ }
+
+ .valyutaPrize td p {
+  margin: 0;
+  font-size: 16px;
+ }
+}

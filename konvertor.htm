@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ValyutaAZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png" />
+  <script src="https://unpkg.com/i18next@22.4.9/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.4/i18nextBrowserLanguageDetector.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="https://www.valyuta.com/statics/photos/valyuta-logo.png" alt="">
+    <ul>
+      <li>
+        <a href="konvertor.htm" data-i18n="Konvertor" style="color: #10ABA2;">Konvertor</a>
+      </li>
+      <li>
+        <a href="mezenneler.htm" data-i18n="Məzənnələr">Məzənnələr</a>
+      </li>
+      <li>
+        <a href="qrafikler.htm" data-i18n="Qrafikler">Qrafiklər</a>
+      </li>
+      <li>
+        <select name="lang">
+          <option value="az">Az</option>
+          <option value="en">Eng</option>
+        </select>
+      </li>
+      <li>
+        <div class="darkmood">
+          <i class="ri-sun-line"></i>
+          <i class="ri-moon-line"></i>
+        </div>
+      </li>
+    </ul>
+    <div class="date">
+      <p></p>
+      <i class="ri-calendar-2-line"></i>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h4 data-i18n="containerH4">VALYUTA KONVERTORU İLƏ BU GÜNƏ OLAN VALYUTA MƏZƏNNƏLƏRİNİ TƏQİB EDİRIK</h4>
+      <p data-i18n="containerP">Çevirmək istədiyiniz valyutanı başqa valyuta məzənnəsinə nisbətdə hesablamaq
+        istəyirsinizsə məbləği yazın və
+        hesablayın.</p>
+    </div>
+    <div class="box">
+      <h2 data-i18n="boxH2">Onlayn valyuta çeviricisi</h2>
+    </div>
+
+    <div class="valyuta">
+      <div class="valyutaleft">
+        <table>
+          <tr>
+            <td style="background-color: #833CDE;">AZN</td>
+            <td>RUB</td>
+            <td>USD</td>
+            <td>EUR</td>
+            <td>TRY</td>
+          </tr>
+        </table>
+        <input class="leftInput" value="1" type="text"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+        <p></p>
+      </div>
+
+      <div class="valyutaright">
+        <table>
+          <tr>
+            <td>AZN</td>
+            <td>RUB</td>
+            <td style="background-color: #833CDE;">USD</td>
+            <td>EUR</td>
+            <td>TRY</td>
+          </tr>
+        </table>
+        <input class="rightInput" type="text" value="0.59"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+        <p></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
